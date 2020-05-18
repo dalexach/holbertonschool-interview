@@ -11,9 +11,9 @@ void print_grid(int grid[3][3])
 	int i, j;
 
 	printf("=\n");
-        for (i = 0; i < 3; i++)
+	for (i = 0; i < 3; i++)
 	{
-                for (j = 0; j < 3; j++)
+		for (j = 0; j < 3; j++)
 		{
 			if (j)
 				printf(" ");
@@ -34,8 +34,8 @@ void sum_grids(int grid1[3][3], int grid2[3][3])
 {
 	int i, j;
 
-        for (i = 0; i < 3; i++)
-                for (j = 0; j < 3; j++)
+	for (i = 0; i < 3; i++)
+		for (j = 0; j < 3; j++)
 			grid1[i][j] = grid1[i][j] + grid2[i][j];
 }
 
@@ -59,7 +59,6 @@ int is_sandpile(int grid1[3][3])
 /**
  * convert_sandpile - Function that convert the grid into a sandpile
  * @grid1: sandpiles stable
- * @grid2: sandpiles stable
  * Return: Nothing (void)
  */
 
@@ -75,7 +74,7 @@ void convert_sandpile(int grid1[3][3])
 
 	for (i = 0; i < 3; i++)
 	{
-                for (j = 0; j < 3; j++)
+		for (j = 0; j < 3; j++)
 		{
 			/** verify if the number in the cell is > 3 */
 			if (grid1[i][j] > 3)
