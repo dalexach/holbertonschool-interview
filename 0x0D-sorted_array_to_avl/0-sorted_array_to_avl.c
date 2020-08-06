@@ -37,7 +37,6 @@ avl_t *insert_node(int *array, size_t start, size_t end, avl_t *parent)
 
 	middle = (start + end) / 2;
 	root = new_node(parent, array[middle]);
-
 	if (!root)
 		return (NULL);
 
@@ -45,7 +44,7 @@ avl_t *insert_node(int *array, size_t start, size_t end, avl_t *parent)
 		root->left = insert_node(array, start, middle - 1, root);
 
 	if (middle != end)
-		root->left = insert_node(array, middle + 1, end, root);
+		root->right = insert_node(array, middle + 1, end, root);
 
 	return (root);
 }
