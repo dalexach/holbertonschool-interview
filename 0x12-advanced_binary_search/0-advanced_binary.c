@@ -5,7 +5,7 @@
  * @array: is a pointer to the first element of the array to search in
  * @size: is the number of elements in array
  * @value: is the value to search for
- * Return: the idx where value is located, otherwise -1 on failure
+ * Return: the index where value is located, otherwise -1 on failure
  */
 
 int advanced_binary(int *array, size_t size, int value)
@@ -45,9 +45,7 @@ int advanced_binary(int *array, size_t size, int value)
 	}
 
 	half++;
-
 	tmp = advanced_binary(array, half, value);
-
 	if (tmp != -1)
 		return (tmp + idx);
 
