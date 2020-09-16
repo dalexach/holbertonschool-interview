@@ -17,7 +17,8 @@ def count_words(subreddit, word_list, hot_list=[], init=0, after="null"):
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     agent = {"User-Agent": "linux:1:v2.1 (by /u/heimer_r)"}
     payload = {"limit": "100", "after": after}
-    hot = requests.get(url, headers=agent, params=payload, allow_redirects=False)
+    hot = requests.get(url, headers=agent,
+                       params=payload, allow_redirects=False)
 
     if hot.status_code == 200:
         posts = hot.json().get("data").get("children")
