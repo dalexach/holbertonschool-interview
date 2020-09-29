@@ -1,4 +1,4 @@
-# [holbertonschool-interview](../)
+# [holbertonschool-interview](https://github.com/dalexach/holbertonschool-interview)
 
 ## 0x14. Heap Extract
 
