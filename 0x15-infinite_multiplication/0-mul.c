@@ -200,7 +200,7 @@ int check_number(char *argv[], int lens[])
 		if (zeros == 0)
 			return (1);
 		zeros = 0;
-		
+
 		if (j == 2)
 			lens[1] = i;
 		else
