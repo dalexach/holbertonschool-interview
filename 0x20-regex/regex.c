@@ -1,6 +1,6 @@
 #include "regex.h"
 /**
- * regex_match - Function that checks whether a given pattern matches a given string.
+ * regex_match - Function checks whether a given pattern matches a given string
  * @str: is the string to scan
  * @pattern: is the regular expression
  * Return: 1 if the pattern matches the string, otherwise 0
